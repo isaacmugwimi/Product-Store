@@ -1,0 +1,29 @@
+.create-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-page{
+    display: flex;
+    flex-direction: column;
+    /* background-color: ; */
+}
+
+.card-page form{
+    display: flex;
+    flex-direction: column;
+    background-color: #1A202C;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card-page form input{
+    margin-bottom: 20px;
+    padding: 13px;
+    background-color: #1A202C;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    letter-spacing: 1.7px;
+}

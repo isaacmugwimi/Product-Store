@@ -1,0 +1,145 @@
+section {
+  place-items: center;
+}
+section .page-header {
+  color: #2d86ca;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+section .create-product-link {
+  color: #2d86ca;
+}
+
+section .create-product-link:hover {
+  text-decoration: underline;
+}
+
+.product-section {
+  max-width: 1100px;
+  /* width: 1100px; */
+  margin: 0 auto; /* Keeps it centered  and avoids horizontal overflow*/
+  overflow-x: hidden;
+}
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #13161D;
+  width: 100%;
+  gap: 15px;
+  box-sizing: border-box;
+  padding: 30px 10px 30px 10px;
+  
+}
+.product-card {
+  background-color: #1A202C;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: start;
+  width: 235px;
+  margin-top: 10px;
+}
+.card-info{
+  padding: 1rem 0 0 1rem ;
+}
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  /* background-size: cover; */
+  border-radius: 10px 10px 0 0;
+}
+
+.price-name{
+  margin-top: -1rem;
+  color: green;
+  font-weight: 600;
+}
+
+.update-delete-icons{
+  display: flex;
+  /* gap: 15px; */
+  padding: 0 0 0 1rem;
+  justify-content: space-between;
+}
+
+.update-delete-icons img{
+  width: 23px;
+  height: auto;
+  cursor: pointer;
+}
+
+.update-delete-icons :nth-child(1){
+  background-color: #8DCBEF;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.update-delete-icons :nth-child(2){
+  background-color: #FEB5B6;
+  padding: 3px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+/* 
+ */
+ /*  */
+ /*  */
+ .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: #1a202c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  color: white;
+}
+
+.modal h2 {
+  margin-bottom: 15px;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.modal button {
+  margin-top: 10px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal button[type="submit"] {
+  background: #2d86ca;
+  color: white;
+}
+
+.modal button[type="button"] {
+  /* background: #ccc; */
+  background: #FEB5B6;
+}
