@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=developement nodemon Backend/server.js",
- "build": "npm install --prefix Backend && npm install --prefix Frontend && npm run build --prefix Frontend",
-    "start": "cross-env NODE_ENV=production node Backend/server.js"
-  },
+  "dev": "cross-env NODE_ENV=development nodemon Backend/server.js",
+  "build": "npm install --prefix Frontend && npm run build --prefix Frontend",
+  "start": "cross-env NODE_ENV=production node Backend/server.js"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
