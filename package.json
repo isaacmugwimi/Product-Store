@@ -7,11 +7,8 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon Backend/server.js",
     "build": "npm install --prefix Frontend && npm run build --prefix Frontend",
-    "start": "NODE_ENV=production node Backend/server.js"
+    "start": "ls -R && echo '--- Starting Server ---' && ls -R Backend && NODE_ENV=production node Backend/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
